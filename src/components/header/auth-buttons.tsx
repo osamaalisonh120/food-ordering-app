@@ -26,7 +26,11 @@ function AuthButtons({
           <Button
             className="!px-8 !rounded-full"
             size="lg"
-            onClick={() => signOut()}
+            onClick={() => signOut(
+              {
+      callbackUrl: `/${locale}`,
+    }
+            )}
           >
             {translations.navbar.signOut}
           </Button>
