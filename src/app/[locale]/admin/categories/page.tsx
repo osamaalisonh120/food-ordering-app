@@ -4,6 +4,8 @@ import { getCategories } from "@/server/db/categories";
 import Form from "./_components/Form";
 import CategoryItem from "./_components/CategoryItem";
 export const dynamic = "force-dynamic";
+export const revalidate = 0;
+export const fetchCache = "force-no-store";
 
 async function CategoriesPage({
   params,

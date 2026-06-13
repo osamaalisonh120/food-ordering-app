@@ -6,6 +6,8 @@ import { getUsers } from "@/server/db/users";
 import { Edit } from "lucide-react";
 import DeleteUserButton from "./_components/DeleteUserButton";
 export const dynamic = "force-dynamic";
+export const revalidate = 0;
+export const fetchCache = "force-no-store";
 
 async function UsersPage({ params }: { params: Promise<{ locale: Locale }> }) {
   const { locale } = await params;

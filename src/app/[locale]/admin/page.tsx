@@ -4,6 +4,8 @@ import { Locale } from "@/i18n.config";
 import getTrans from "@/lib/translation";
 import { authOptions } from "@/server/auth";
 export const dynamic = "force-dynamic";
+export const revalidate = 0;
+export const fetchCache = "force-no-store";
 
 import { getServerSession } from "next-auth";
 import { redirect } from "next/navigation";
