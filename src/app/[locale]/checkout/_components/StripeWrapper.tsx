@@ -9,7 +9,13 @@ export default function StripeWrapper({
 }: {
   clientSecret: string;
   children: React.ReactNode;
-}) {
+}) 
+
+
+{
+ if (!clientSecret) {
+    return <div>Loading...</div>;
+  }
   return (
     <Elements
       stripe={stripePromise}
