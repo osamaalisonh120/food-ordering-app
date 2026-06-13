@@ -5,6 +5,7 @@ import { Locale } from "@/i18n.config";
 import { getUsers } from "@/server/db/users";
 import { Edit } from "lucide-react";
 import DeleteUserButton from "./_components/DeleteUserButton";
+export const dynamic = "force-dynamic";
 
 async function UsersPage({ params }: { params: Promise<{ locale: Locale }> }) {
   const { locale } = await params;

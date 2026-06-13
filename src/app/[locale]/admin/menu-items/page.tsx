@@ -10,6 +10,7 @@ import { ArrowRightCircle } from "lucide-react";
 import { getServerSession } from "next-auth";
 import { redirect } from "next/navigation";
 import MenuItems from "./_components/MenuItems";
+export const dynamic = "force-dynamic";
 
 async function MenuItemsPage({
   params,

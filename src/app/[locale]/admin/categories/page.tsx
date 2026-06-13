@@ -3,6 +3,7 @@ import getTrans from "@/lib/translation";
 import { getCategories } from "@/server/db/categories";
 import Form from "./_components/Form";
 import CategoryItem from "./_components/CategoryItem";
+export const dynamic = "force-dynamic";
 
 async function CategoriesPage({
   params,

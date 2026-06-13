@@ -1,4 +1,5 @@
 import { db } from "@/lib/prisma";
+export const dynamic = "force-dynamic";
 
 export default async function OrdersPage() {
   const orders = await db.order.findMany({
