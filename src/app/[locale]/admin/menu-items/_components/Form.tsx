@@ -529,7 +529,7 @@ const UploadImage = ({
     uploadFormData.append("pathName", "products");
 
     try {
-      const res = await fetch("/api/upload", {
+      const res = await fetch(  `${process.env.NEXT_PUBLIC_BASE_URL}/api/upload`, {
         method: "POST",
         body: uploadFormData,
       });
